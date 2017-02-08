@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Immense Cloud</title>
+	<meta name="author" content="Immense Cloud" />
+	<meta name="description" content="Immense Cloud" />
+	<meta name="keywords"  content="Immense Cloud" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/hide-address-bar.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+	<script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			var ipad = window.matchMedia( "(max-width: 1023px)" );			
+			
+
+			
+			if (ipad.matches) {
+				
+				$("#showLeftPush").click(function(){
+				$(".leftnavigation").toggle('fast');
+				});
+				
+				$('.leftnavigation li') .click(function()
+		{
+			
+			
+			
+			$(this).parent().toggle();
+		
+		});
+				
+  // window width is at least 500px
+} else {
+  // window width is less than 500px
+}
+
+
+			
+			$('#fullpage').fullpage({
+			//  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			  anchors: ['AboutUs', 'Product', 'Supported', 'Ourteam', 'ContactUs'],
+			  menu: '#menu',
+			  autoScrolling: false
+			//continuousVertical: false
+			});
+		
+			
+		
+		window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
+	
+	
+	 		
+	var InputP = $('input[name=name]');
+    var default_valuep = InputP.val();
+
+    $(InputP).focus(function() {
+        if($(this).val() == default_valuep)
+        {
+             $(this).val("");
+        }
+    }).blur(function(){
+        if($(this).val().length == 0) /*Small update*/
+        {
+            $(this).val(default_valuep);
+        }
+    });
+	
+	
+		var InputE = $('input[name=email]');
+    var default_valueE = InputE.val();
+
+    $(InputE).focus(function() {
+        if($(this).val() == default_valueE)
+        {
+             $(this).val("");
+        }
+    }).blur(function(){
+        if($(this).val().length == 0) /*Small update*/
+        {
+            $(this).val(default_valueE);
+			
+        }
+    });
+	
+	
+		var InputN = $('input[name=number]');
+    var default_valueN = InputN.val();
+
+    $(InputN).focus(function() {
+        if($(this).val() == default_valueN)
+        {
+             $(this).val("");
+			 
+        }
+    }).blur(function(){
+        if($(this).val().length == 0) /*Small update*/
+        {
+            $(this).val(default_valueN);
+        }
+    });
+	
+		});
+		
+		
+	
+	
+
+	</script>
+	</head>
+	<body class="cbp-spmenu-push">
+   <!-- <div class="landscape">The website is best viewed in portrait mode</div>-->
+<div id="header">
+      <div class="logo"><a href="#AboutUs"><img src="images/logo.png" alt="cloud immense" /></a></div>
+    </div>
+<a href="#" id="showLeftPush" class="leftmenu">&nbsp;</a>
+<ul id="menu" class="leftnavigation">
+      <li data-menuanchor="AboutUs" class="first"><a href="#AboutUs">About Us</a></li>
+      <li data-menuanchor="Product"><a href="#Product">Product</a></li>
+      <li data-menuanchor="Supported"><a href="#Supported">Supported</a></li>
+      <li data-menuanchor="Ourteam"><a href="#Ourteam">Our Team</a></li>
+      <li data-menuanchor="ContactUs"><a href="#ContactUs">Contact Us</a></li>
+    </ul>
+</div>
+<div class="sociallinks">
+      <ul>
+    <li><a href="#"><img src="images/twitter.png" width="52" height="58" alt=""></a></li>
+    <li><a href="#"><img src="images/googleplus.png" width="52" height="58" alt=""></a></li>
+    <li><a href="#"><img src="images/facebook.png" width="52" height="58" alt=""></a></li>
+    <li><a href="#"><img src="images/linkedin.png" width="52" height="58" alt=""></a></li>
+  </ul>
+    </div>
+<div id="fullpage">
+      <div class="section " id="section0">
+    <div class="banner_txt">
+          <p class="banner"><img src="images/aboutus_banner.png" alt=""></p>
+          <p class="aboutus_txt"> "Provide the most cost effective optimal solution to manage hetrogenous cloud resources to save the enormous amount of money spent on unutilized cloud resources through a unified console" <span>We believe in simpilfied administration of cloud based solutions .Our product is targeted to Developer , cloud Adminstrators to manage their resources in optimal way.</span><span>We are proud to announce a heterogeneous cloud product Cloud Hopper for scheduling compute and storage specific operations across multiple cloud platforms.</span></p>
+        </div>
+  </div>
+      <div class="section" id="section1">
+    <div class="product">
+          <!--<h1 class="heading">Our Product</h1>-->
+          <p>Cloud Hopper makes your cloud management simple, setting you free from problems like heavy spendings on un utilized resources across cloud platforms or vendor lock in. The plug and play architecture of the product can replicate your entire cloud setup across providers and works well across any device including your laptops, desktops, tablets and cell phones </p>
+          <ul class="list2">
+        <li class="red"><span class="cloud">&nbsp;</span>
+              <p>Unified Streamlined console for multicloud environment </p>
+            </li>
+        <li class="red"><span class="paper">&nbsp;</span><p>Template based cross cloud service management</p></li>
+        <li class="yellow"><span class="power">&nbsp;</span><p>Provision / Deprovision resources on Demand</p></li>
+        <li class="yellow"><span class="keys">&nbsp;</span><p>Role based access multiple user accounts</p></li>
+        <li class="blue"><span class="account">&nbsp;</span><p>Account management</p></li>
+        <li class="blue"><span class="code">&nbsp;</span><p>REST API for granular resource management</p> </li>
+        <li class="darkblue"><span class="storekey">&nbsp;</span><p>Credential store to manage your private keys</p></li>
+        <li class="darkblue"><span class="clock">&nbsp;</span><p>Schedule backups and Common reduntant operations</p> </li>
+        <li class="red"><span class="plugin">&nbsp;</span><p>Plugins to integrate with Devops tools </p></li>
+        <li class="red"><span class="clouds">&nbsp;</span><p>IaaS , PaaS , SaaS service control</p></li>
+      </ul>
+        </div>
+  </div>
+      <div class="section" id="section2">
+    <div class="support">
+          <h1 class="heading">Supported Providers</h1>
+          <ul class="list1">
+        <li><img src="images/amazonservices.png" alt=""></li>
+        <li><img src="images/openstack.png" alt=""></li>
+        <li><img src="images/rackspace.png" alt=""></li>
+        <li><img src="images/googlecloud.png" alt=""></li>
+      </ul>
+        </div>
+  </div>
+      <div class="section" id="section3">
+    <div class="ourteam">
+          <h1 class="heading">Team Members</h1>
+          <ul class="">
+        <li><img src="images/samvaran.png" alt="" class="members" />
+              <h2 class="name">Samvaran Kashyap</h2>
+              <p class="social"><a href="#"><img src="images/github_team.png" width="56" height="57" alt=""></a> <a href="#"><img src="images/team_linkedin.png" width="56" height="57" alt=""></a></p>
+            </li>
+        <li><img src="images/shraddha.png" alt="" class="members" />
+              <h2 class="name">Shraddha Jain</h2>
+              <p class="social"><a href="#"><img src="images/github_team.png" width="56" height="57" alt=""></a> <a href="#"><img src="images/team_linkedin.png" width="56" height="57" alt=""></a></p>
+            </li>
+        <li><img src="images/mayank.png" alt="" class="members" />
+              <h2 class="name">Mayank Jain</h2>
+              <p class="social"><a href="#"><img src="images/github_team.png" width="56" height="57" alt=""></a> <a href="#"><img src="images/team_linkedin.png" width="56" height="57" alt=""></a></p>
+            </li>
+      </ul>
+        </div>
+  </div>
+      <div class="section" id="section4">
+    <div class="contact">
+          <h1 class="heading">Let's get in touch</h1>
+          <div class="leftform">
+          <form>
+          <ul class="formlist">
+          <li><input type="text" value="Full Name" placeholder="Full Name" name="name"  tabindex="1" /><img src="images/name.png"  alt=""></li>
+           <li><input type="email" value="Email ID" name="email" tabindex="2" /><img src="images/email.png" alt=""></li>
+            <li><input type="number" value="Phone No"  name="phone" tabindex="3"  /><img src="images/phone.png" alt=""></li>
+            <li><textarea tabindex="4">Comments</textarea></li>
+            </ul>
+          
+           <input type="button" value="Submit" class="yellowbtn" />
+          </form>
+          </div>
+          <div class="rightform">
+          <h2 class="heading2">SUBSCRIBE TO OUR MAILING LIST</h2>
+          <ul class="formlist">
+          <li class="email"><input type="email" value="Email ID"  name="email" tabindex="5" />
+            <img src="images/email.png" alt=""></li>
+          </ul>
+           <input type="button" value="subscribe" class="secondarybtn" />
+           
+           <div class="address">
+<span class="emailicon"><a href="mailto:sales@cloudimmense.com">sales@cloudimmense.com</a></span>
+</div>
+          </div>
+        </div>
+        
+          <div class="footer">All Rights Reseved 2016</div>
+  </div>
+    </div>
+</body>
+</html>
